@@ -1,0 +1,18 @@
+<mat-toolbar class="tool-bar" color="primary">
+  <a mat-button class="show-mobile" [matMenuTriggerFor]="menu">Menu</a>
+  <img [routerLink]="''" src="assets/images/book.png" class="logo" alt="">
+  <span class="spacer-full show-mobile"></span>
+  <a class="show-desktop" color="primary"  mat-flat-button [routerLink]="''" > <h1> Marker </h1> </a>
+  <span class="spacer-full"></span>
+  <a class="show-desktop" color="primary" mat-flat-button href="#features" > Features </a>
+  <a class="show-desktop" color="primary"  mat-flat-button href="#pricing" > Pricing </a>
+  <a class="show-desktop" color="primary"  mat-flat-button target="_blank" href="https://app.diltai.com"> Login </a>
+  <a class="show-desktop" color="primary"  mat-flat-button target="_blank" href="https://app.diltai.com/signup" > <h1> SignUp </h1> </a>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <a mat-menu-item [routerLink]="''">Home</a>
+  <a mat-menu-item color="primary" href="#features" > Features </a>
+  <a mat-menu-item color="primary" href="#pricing" > Pricing </a>
+</mat-menu>
+
